@@ -1,5 +1,6 @@
 Namespace Serializable
-    Class Type
+    Public Class Type
+        Public Property DisplayName As String
         Public Property FullName As String
         Public Property Assembly As Assembly
         
@@ -8,6 +9,7 @@ Namespace Serializable
         End Sub
         
         Public Sub New(type As System.Type)
+            DisplayName = type.DisplayName
             FullName = type.FullName
             Assembly = New Assembly(type.Assembly)
         End Sub

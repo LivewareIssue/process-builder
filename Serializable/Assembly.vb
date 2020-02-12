@@ -1,5 +1,5 @@
 Namespace Serializable
-    Class Assembly
+    Public Class Assembly
         Implements IEquatable(Of Assembly)
         Public Property FullName As String
         Public Property Location As String
